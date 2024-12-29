@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a:hover{
+    background-color: rgb(255, 115, 0);
+    color: white;
+    border-radius: 5px;
+}
+
+#pizza_kereses:hover, div:hover{
+    background-color: rgb(238, 87, 28);
+    color: white;
+    border-radius: 15px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 900px;
+    background-color: rgb(255, 192, 134);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 25pt;
+    font-variant: small-caps;
+}
+
+nav, footer{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: orange;
+    border: darkorange 2px solid;
+    border-radius: 5px;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+    padding: 8px;
+}
+
+nav>a{
+    background-color: orange;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+#pizza_kereses{
+    background-color: rgb(255, 190, 69);
+    border: darkorange 2px solid;
+    border-radius: 15px;
+    padding: 2px 40px;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin: 10px;
+    align-items: stretch;
+    justify-items: stretch;
+    background-color: rgb(255, 192, 134);
+}
+
+footer{
+    font-size: 8pt;
+}
+
+div{
+    border: darkorange 2px solid;
+    border-radius: 15px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+.vastag_betu{
+    font-weight: bolder;
+    font-variant: small-caps;
+    color: white;
+}
+
+img{
+    grid-area: kep;
+    background-color: white;
+    border-radius: 5px;
+    max-width: 100%;
+    height: 75pt;
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+article{
+    display: grid;
+    grid-template-areas:
+    'adatok adatok osszegzes'
+    'szamlazasi_adatok szamlazasi_adatok osszegzes'
+    ;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.pizza_adatok{
+    grid-area: adatok;
+    border: darkorange 2px solid;
+    padding: 5px;
+    background-color: rgb(255, 192, 134);
+}
+
+.rendeles_osszegzes{
+    grid-area: osszegzes;
+    border: darkorange 2px solid;
+    padding: 5px;
+    background-color: rgb(255, 192, 134);
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 192, 134);
+    color: white;
+}
+
+.szamlazasi_adatok{
+    grid-area: szamlazasi_adatok;
+    border: darkorange 2px solid;
+    padding: 5px;
+    background-color: rgb(255, 192, 134);
+}
+
+@media only screen and (max-width: 600px){
+    article{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        justify-items: stretch;
+    }
+
+    nav>a{
+        display: block;
+    }
+
+}

@@ -1,0 +1,35 @@
+p, a{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover{
+    background-color: rgb(255, 192, 134);
+}
+
+#varhato_ido_egyedi_meret{
+    font-size: 25px;
+    font-variant: small-caps;
+}
+
+img{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+}
+
+@media only screen and (max-width: 600px){
+    article{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        justify-items: stretch;
+    }
+
+    nav>a{
+        display: block;
+    }
+
+}
